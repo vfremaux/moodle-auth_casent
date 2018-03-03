@@ -1,0 +1,11 @@
+<div class="local-logout-message">
+<?php echo get_string('remotelogoutmessage', 'auth_casent'); ?>
+</div>
+<div class="loginbox clearfix">
+<div class="loginpanel">
+<?php 
+$loginurl = new moodle_url(get_login_url());
+echo '<a href="'.$loginurl->out_omit_querystring().'?authCAS=NOCAS" />'.get_string('accesNOCAS', 'auth_casent').'</a>';
+?>
+</div>
+</div>
