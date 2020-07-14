@@ -24,6 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata'] = 'Ce plugin ne détient pas directement de données utilisateur';
+
 $string['accesNOCAS'] = 'Accès pour les utilisateurs locaux';
 $string['auth_cas_checklogoutclient'] = 'Vérifier le client distant pour les demandes de déconnexion';
 $string['auth_cas_checklogoutclientdesc'] = 'Si activé, les IPs de provenance des demandes de déconnexion distantes sont vérifiées. Veuillez remplir la liste d\'IPs autorisées ci-dessous.';

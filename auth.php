@@ -41,7 +41,7 @@ class auth_plugin_casent extends auth_plugin_cas {
     /**
      * Constructor.
      */
-    function auth_plugin_casent() {
+    function __construct() {
         $this->authtype = 'casent';
         $this->roleauth = 'auth_casent';
         $this->errorlogtag = '[AUTH CASENT] ';

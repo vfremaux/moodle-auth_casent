@@ -13,23 +13,29 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
- * Version details
+ * Privacy Subsystem implementation for auth_cas.
  *
- * @package    auth_casent
- * @author     Valery Fremaux
+ * @package    auth_cas
+ * @copyright  2018 Carlos Escobedo <carlos@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
+namespace auth_casent\privacy;
 defined('MOODLE_INTERNAL') || die();
-
-$plugin->version   = 2015020600;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2020060900;        // Requires this Moodle version
-$plugin->component = 'auth_casent';        // Full name of the plugin (used for diagnostics)
-$plugin->dependencies = array('auth_cas' => 2013110500);
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = "3.9.0 (Build 2015020600)";
-
-// Non moodle attributes.
-$plugin->codeincrement = '3.9.0000';
+/**
+ * Privacy Subsystem for auth_cas implementing null_provider.
+ *
+ * @copyright  2018 Carlos Escobedo <carlos@moodle.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class provider implements \core_privacy\local\metadata\null_provider {
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}

@@ -24,6 +24,8 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+$string['privacy:metadata'] = 'This plugin has no direct user data hold by itself.';
+
 $string['accesNOCAS'] = 'Local users only';
 $string['auth_cas_checklogoutclient'] = 'Check remote client for logout requests';
 $string['auth_cas_checklogoutclientdesc'] = 'If enabled, incoming IPs are checked for accepting remote Logout Requests. You need fill the next field.';
