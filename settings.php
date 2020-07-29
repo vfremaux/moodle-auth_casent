@@ -149,15 +149,15 @@ if ($ADMIN->fulltree) {
 
         // ENT ADDS
         // No logout link.
-        $settings->add(new admin_setting_configcheckbox('auth_cas/nologoutnologoutatallforcasusers',
+        $settings->add(new admin_setting_configcheckbox('auth_casent/nologoutnologoutatallforcasusers',
                 get_string('auth_cas_nologoutatallforcasusers', 'auth_casent'),
                 get_string('auth_cas_nologoutatallforcasusers', 'auth_casent'), '', PARAM_BOOL));
 
-        $settings->add(new admin_setting_configcheckbox('auth_cas/checklogoutclient',
+        $settings->add(new admin_setting_configcheckbox('auth_casent/checklogoutclient',
                 get_string('auth_cas_checklogoutclient', 'auth_casent'),
                 get_string('auth_cas_checklogoutclient', 'auth_casent'), '', PARAM_BOOL));
 
-        $settings->add(new admin_setting_configtext('auth_cas/remotelogoutallowedclients',
+        $settings->add(new admin_setting_configtext('auth_casent/remotelogoutallowedclients',
                 get_string('auth_cas_remotelogoutallowedclients', 'auth_casent'),
                 get_string('auth_cas_remotelogoutallowedclients', 'auth_casent'), '', PARAM_TEXT));
         // /ENT ADDS

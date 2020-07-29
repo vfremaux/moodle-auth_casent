@@ -47,7 +47,6 @@ class auth_plugin_casent extends auth_plugin_cas {
         $this->errorlogtag = '[AUTH CASENT] ';
         $this->init_plugin($this->authtype);
         $this->casinitialized = false;
-        $this->config = get_config('auth/casent');
     }
 
     /**
