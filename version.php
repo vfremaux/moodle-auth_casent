@@ -25,11 +25,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->version   = 2015020600;        // The current plugin version (Date: YYYYMMDDXX)
-$plugin->requires  = 2020060900;        // Requires this Moodle version
+$plugin->requires  = 2018042700;        // Requires this Moodle version
 $plugin->component = 'auth_casent';        // Full name of the plugin (used for diagnostics)
 $plugin->dependencies = array('auth_cas' => 2013110500);
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = "3.9.0 (Build 2015020600)";
+$plugin->release = "3.5.0 (Build 2015020600)";
 
 // Non moodle attributes.
-$plugin->codeincrement = '3.9.0000';
+$plugin->codeincrement = '3.5.0000';
