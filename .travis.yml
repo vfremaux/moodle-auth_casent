@@ -10,7 +10,7 @@ addons:
       - openjdk-8-jre-headless
 
 services:
-  - mysql
+   - mysql
 
 cache:
   directories:
@@ -18,11 +18,11 @@ cache:
     - $HOME/.npm
 
 php:
- - 7.2
+ - 7.3
 
 env:
  global:
-  - MOODLE_BRANCH=MOODLE_39_STABLE
+  - MOODLE_BRANCH=MOODLE_38_STABLE
  matrix:
   - DB=pgsql
   - DB=mariadb
@@ -44,7 +44,9 @@ script:
   - moodle-plugin-ci phpmd
   - moodle-plugin-ci codechecker
   - moodle-plugin-ci validate
-  - moodle-plugin-ci grunt
+  - moodle-plugin-ci savepoints
+  - moodle-plugin-ci mustache
 #  - moodle-plugin-ci phpdoc
-#  - moodle-plugin-ci phpunit
+  - moodle-plugin-ci grunt
+  - moodle-plugin-ci phpunit
 #  - moodle-plugin-ci behat
